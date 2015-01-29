@@ -31,7 +31,7 @@ echo "unset DBUS_SESSION_BUS_ADDRESS" >> ~/.vnc/xstartup
 echo "openbox-session &" >> ~/.vnc/xstartup
 echo "virt-manager &" >> ~/.vnc/xstartup
 
-sudo cp ~/vmhost/vncserver /etc/init.d/vncserver
+sudo cp ~/uvmh/vncserver /etc/init.d/vncserver
 sudo chmod +x /etc/init.d/vncserver
 sudo update-rc.d vncserver defaults 99 > /dev/null
 
@@ -44,7 +44,7 @@ clear
 echo -e "${green}Moving Openbox configs to .config/openbox${NC}"
 mkdir -p ~/.config/openbox
 sudo cp -R /etc/xdg/openbox/* ~/.config/openbox
-yes | cp -rf ~/vmhost/menu.xml ~/.config/openbox/menu.xml
+yes | cp -rf ~/uvmh/menu.xml ~/.config/openbox/menu.xml
 clear
 
 # Configuring Samba
