@@ -1,5 +1,5 @@
 # User Variables
-share='iso'
+share='images'
 vGeometry='1280x800'
 
 # Script Variables
@@ -50,8 +50,8 @@ clear
 # Configuring Samba
 echo -e "${green}Configuring Samba${NC}"
 echo "[${share}]" | sudo tee -a /etc/samba/smb.conf
-echo " comment = iso images" | sudo tee -a /etc/samba/smb.conf
-echo " path = /var/lib/libvirt/images/iso" | sudo tee -a /etc/samba/smb.conf
+echo " comment = vm share" | sudo tee -a /etc/samba/smb.conf
+echo " path = /var/lib/libvirt/images" | sudo tee -a /etc/samba/smb.conf
 echo " browseable = yes" | sudo tee -a /etc/samba/smb.conf
 echo " read only = yes" | sudo tee -a /etc/samba/smb.conf
 echo " write list = @sambashare" | sudo tee -a /etc/samba/smb.conf
@@ -63,9 +63,6 @@ echo -e "${yellow}Created Samba share with name ${share}${NC}"
 sleep 5
 clear
 sudo smbpasswd -a $USER
-sudo mkdir -p /var/lib/libvirt/images/iso
-sudo chmod -R 775 /var/lib/libvirt/images/iso
-sudo chown -R root:sambashare /var/lib/libvirt/images/iso
 sudo /etc/init.d/samba restart
 
 # Reboot
