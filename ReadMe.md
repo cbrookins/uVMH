@@ -1,6 +1,9 @@
 Ubuntu Virtual Machine Host
 ===========================
 
+# Requirements
+Ubuntu 14.04
+
 # Setup
 
 ## Ubuntu Setup
