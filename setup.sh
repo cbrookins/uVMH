@@ -8,6 +8,8 @@ green='\033[0;32m'
 yellow='\033[1;33m'
 NC='\033[0m' # No Color
 
+# Configure umvh tools
+chmod +x ~/uvmh/fDisk.sh
 
 # Upgrading OS
 clear
