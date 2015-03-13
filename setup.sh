@@ -9,7 +9,7 @@ yellow='\033[1;33m'
 NC='\033[0m' # No Color
 
 # Configure umvh tools
-chmod +x ~/uvmh/fDisk.sh
+chmod +x ~/uVMH/fDisk.sh
 
 # Upgrading OS
 clear
@@ -33,7 +33,7 @@ echo "unset DBUS_SESSION_BUS_ADDRESS" >> ~/.vnc/xstartup
 echo "openbox-session &" >> ~/.vnc/xstartup
 echo "virt-manager &" >> ~/.vnc/xstartup
 
-sudo cp ~/uvmh/vncserver /etc/init.d/vncserver
+sudo cp ~/uVMH/vncserver /etc/init.d/vncserver
 sudo chmod +x /etc/init.d/vncserver
 sudo update-rc.d vncserver defaults 99 > /dev/null
 
@@ -46,7 +46,7 @@ clear
 echo -e "${green}Moving Openbox configs to .config/openbox${NC}"
 mkdir -p ~/.config/openbox
 sudo cp -R /etc/xdg/openbox/* ~/.config/openbox
-yes | cp -rf ~/uvmh/menu.xml ~/.config/openbox/menu.xml
+yes | cp -rf ~/uVMH/menu.xml ~/.config/openbox/menu.xml
 clear
 
 # Configuring Samba
