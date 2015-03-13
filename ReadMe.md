@@ -16,20 +16,20 @@ During the Ubuntu installation select the following options:
 
 ### Clone git repository
 `sudo apt-get install git`  
-`git clone https://github.com/cbrookins/uvmh`  
+`git clone https://github.com/cbrookins/uVMH`  
 
 ### Run UVMH
 `chmod +x uvmh/setup.sh`  
-`uvmh/setup.sh`
+`uVMH/setup.sh`
 
 ### Includes
 **Fixed Disk Tool**
 > After working with virt-manager I noticed that even when I asked it to create a fixed disk, it wouldn't.  I created this little bash script to handle that for me.  
 >
 > **Usage**  
-> `uvmh/fDisk.sh *format* *name* *size*`
+> `uVMH/fDisk.sh *format* *name* *size*`
 > 
 > **Example**
-> `uvmh/fDisk.sh vmdk ubuntu_sda 60G`  
+> `uVMH/fDisk.sh vmdk ubuntu_sda 60G`  
 > *This will create a 60 gigabyte vmdk formatted virtual disk named ubuntu_sda.vmdk*  
 > *See the [qemu documentation](http://qemu.weilnetz.de/qemu-doc.html#disk_005fimages_005fformats) for additional formats that can be used*
