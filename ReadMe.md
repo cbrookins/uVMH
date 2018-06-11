@@ -5,8 +5,8 @@ Ubuntu Virtual Machine Host
 This script is meant to easily configure a headless Ubuntu virtual machine host.  Using VNC, openbox and virt-manager the server can be managed through a GUI interface over a VNC connection.  Samba allows for virtual hard disks and OS images to easily be transferred to the server.  
 
 ## Requirements
-Ubuntu 14.04
-Ubuntu 18.04
+Ubuntu 14.04  
+Ubuntu 18.04  
 
 ## Setup
 
@@ -23,9 +23,9 @@ During the Ubuntu installation select the following options:
 `chmod +x uvmh/setup.sh`  
 `uVMH/setup.sh`
 
-### Notes
-VNC will be available on port **5901**
-**example:** xx.xx.xx.xx:5901
+### Notes  
+VNC will be available on port **5901**  
+**example:** xx.xx.xx.xx:5901  
 
 ### Includes
 **Fixed Disk Tool**
