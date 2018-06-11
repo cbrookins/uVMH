@@ -6,6 +6,7 @@ This script is meant to easily configure a headless Ubuntu virtual machine host.
 
 ## Requirements
 Ubuntu 14.04
+Ubuntu 18.04
 
 ## Setup
 
@@ -21,6 +22,10 @@ During the Ubuntu installation select the following options:
 ### Run UVMH
 `chmod +x uvmh/setup.sh`  
 `uVMH/setup.sh`
+
+### Notes
+VNC will be available on port **5901**
+**example:** xx.xx.xx.xx:5901
 
 ### Includes
 **Fixed Disk Tool**
